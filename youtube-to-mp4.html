@@ -6,13 +6,20 @@
   <meta name="google-site-verification" content="aw5Wm084YfMFhUZzXty1qJb_AeVDk4EFYMuI2-kZTy8" />
   <meta name="monetag" content="e06b17c8a0087aaa09da9481b01b2f5f">
 
-    <!-- Primary SEO Meta Tags -->
+  <!-- Primary SEO Meta Tags -->
   <title>YouTube to MP4 Converter - 1080p Full HD & 4K Video Downloader | FreeYT</title>
   <meta name="title" content="YouTube to MP4 Converter - 1080p Full HD & 4K Video Downloader | FreeYT">
   <meta name="description" content="Download YouTube videos to MP4 in 1080p Full HD, 4K, 720p, and 480p with complete audio. Free, fast online YouTube to MP4 video downloader with zero limitations.">
   <meta name="keywords" content="youtube to mp4, download 4k youtube video, download youtube video in 4k, youtube download 1080p, youtube downloader 1080p, hd youtube downloader, high definition youtube downloader, download youtube video 1080p, download youtube videos in highest quality, fast youtube download, 4k video downloader online, descargar video mp4, descargar youtube videos en 4k, descargar videos de youtube">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://freeytdownloader.cyou/youtube-to-mp4.html">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://freeytdownloader.cyou/youtube-to-mp4.html">
+  <meta property="og:title" content="YouTube to MP4 Converter - 1080p Full HD & 4K Video Downloader">
+  <meta property="og:description" content="Convert and download YouTube videos to MP4 in 1080p Full HD and 4K resolution online for free.">
+  <meta property="og:image" content="https://freeytdownloader.cyou/favicon.svg">
 
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -61,6 +68,436 @@
     ]
   }
   </script>
+
+  <style>
+    :root { --primary: #e62117; --primary-hover: #cc181e; --accent: #28a745; --accent-hover: #218838; --bg: #f8fafc; --card-bg: #ffffff; --text: #1e293b; --text-muted: #64748b; --border: #e2e8f0; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { overflow-x: hidden; width: 100%; }
+    body { background-color: var(--bg); color: var(--text); font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; font-size: 14px; line-height: 1.6; display: flex; flex-direction: column; min-height: 100vh; }
+    header { background: #ffffff; border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 100; width: 100%; }
+    .header-inner { max-width: 1000px; margin: 0 auto; padding: 14px 20px; display: flex; justify-content: space-between; align-items: center; }
+    .logo-container { display: flex; align-items: center; gap: 10px; text-decoration: none; color: inherit; }
+    .logo-img { width: 34px; height: 34px; }
+    .logo-text { font-size: 21px; font-weight: 700; color: #0f172a; letter-spacing: -0.5px; }
+    .logo-text span { color: var(--primary); }
+    nav { display: flex; gap: 18px; align-items: center; flex-wrap: wrap; }
+    nav a { color: var(--text-muted); text-decoration: none; font-size: 13.5px; font-weight: 500; transition: color 0.15s; }
+    nav a:hover, nav a.active { color: var(--primary); }
+    main { flex: 1; max-width: 900px; width: 100%; margin: 0 auto; padding: 35px 20px 20px 20px; }
+    .hero { text-align: center; margin-bottom: 30px; }
+    .hero h1 { font-size: 28px; font-weight: 800; color: #0f172a; margin-bottom: 8px; letter-spacing: -0.5px; }
+    .hero p { color: var(--text-muted); font-size: 15px; }
+    .converter-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.04); margin-bottom: 30px; width: 100%; }
+    .form-wrap { display: flex; width: 100%; border: 2px solid var(--primary); border-radius: 8px; overflow: hidden; background: #fff; transition: box-shadow 0.2s; }
+    .form-wrap:focus-within { box-shadow: 0 0 0 3px rgba(230, 33, 23, 0.2); }
+    .input-url { flex: 1; min-width: 0; height: 50px; border: none; outline: none; padding: 0 18px; font-size: 15px; color: #1e293b; background: transparent; }
+    .btn-start { flex-shrink: 0; height: 50px; padding: 0 28px; background: var(--primary); color: #fff; border: none; font-size: 15px; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 8px; transition: background 0.15s; white-space: nowrap; }
+    .btn-start:hover { background: var(--primary-hover); }
+    .btn-start:disabled { background: #f87171; cursor: not-allowed; }
+    .form-tip { font-size: 12px; color: var(--text-muted); margin-top: 12px; text-align: center; }
+    .spinner-wrap { display: flex; flex-direction: column; align-items: center; gap: 12px; margin: 25px 0; }
+    .spinner-circle { width: 36px; height: 36px; border: 3.5px solid #fee2e2; border-top-color: var(--primary); border-radius: 50%; animation: spin 0.8s linear infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .result-section { background: #fff; border: 1px solid var(--border); border-radius: 10px; padding: 24px; margin-top: 25px; width: 100%; }
+    .result-header { display: flex; gap: 16px; align-items: center; margin-bottom: 20px; padding-bottom: 16px; border-bottom: 1px solid var(--border); }
+    .result-thumb { width: 110px; height: 62px; object-fit: cover; border-radius: 6px; background: #e2e8f0; flex-shrink: 0; }
+    .result-meta { flex: 1; min-width: 0; }
+    .result-meta h3 { font-size: 15px; font-weight: 700; color: #0f172a; margin-bottom: 4px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .result-meta p { font-size: 13px; color: var(--text-muted); }
+    .tabs-bar { display: flex; gap: 8px; border-bottom: 2px solid var(--border); margin-bottom: 16px; }
+    .tab-btn { background: transparent; border: none; padding: 8px 18px; font-size: 14px; font-weight: 600; color: var(--text-muted); cursor: pointer; border-bottom: 2px solid transparent; margin-bottom: -2px; }
+    .tab-btn.active { color: var(--primary); border-bottom-color: var(--primary); }
+    .table-container { width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    .formats-table { width: 100%; border-collapse: collapse; min-width: 280px; }
+    .formats-table th { text-align: left; padding: 10px 12px; background: #f8fafc; color: var(--text-muted); font-size: 12.5px; font-weight: 600; border-bottom: 1px solid var(--border); }
+    .formats-table td { padding: 12px; border-bottom: 1px solid var(--border); vertical-align: middle; font-size: 13.5px; }
+    .badge-high { background: #dcfce7; color: #15803d; font-size: 11px; padding: 2px 6px; border-radius: 4px; font-weight: 600; margin-left: 6px; }
+    .download-action-btn { background: var(--accent); color: #ffffff !important; text-decoration: none; padding: 8px 16px; border-radius: 6px; font-size: 13px; font-weight: 600; display: inline-flex; align-items: center; gap: 6px; border: none; cursor: pointer; transition: background 0.15s; white-space: nowrap; }
+    .download-action-btn:hover { background: var(--accent-hover); }
+
+    /* Steps & Extended Features */
+    .step-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin: 24px 0; }
+    .step-card { background: #f8fafc; border: 1px solid var(--border); border-radius: 10px; padding: 22px; position: relative; }
+    .step-num { font-size: 26px; font-weight: 800; color: var(--primary); opacity: 0.85; margin-bottom: 8px; line-height: 1; }
+    .step-card h4 { font-size: 15px; font-weight: 700; color: #0f172a; margin-bottom: 6px; }
+    .step-card p { font-size: 13.5px; color: var(--text-muted); margin-bottom: 0; line-height: 1.6; }
+
+    .pills-container { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0 24px 0; }
+    .spec-pill { background: #f1f5f9; color: #334155; font-size: 12.5px; font-weight: 600; padding: 6px 12px; border-radius: 6px; border: 1px solid var(--border); }
+    .spec-pill.highlight { background: #fee2e2; color: #b91c1c; border-color: #fecaca; }
+
+    .grid-features { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin: 20px 0; }
+    .grid-item { background: #f8fafc; border: 1px solid var(--border); border-radius: 8px; padding: 18px; }
+    .grid-item h4 { font-size: 14px; font-weight: 700; color: #0f172a; margin-bottom: 6px; }
+    .grid-item p { font-size: 13px; color: var(--text-muted); margin-bottom: 0; }
+
+    .faq-card { background: #f8fafc; border: 1px solid var(--border); border-radius: 8px; padding: 18px 20px; margin-bottom: 12px; }
+    .faq-card h3 { font-size: 15px; font-weight: 700; color: #0f172a; margin: 0 0 6px 0; }
+    .faq-card p { font-size: 13.5px; color: #475569; margin: 0; line-height: 1.6; }
+
+    /* SEO Articles */
+    .article-box { background: #fff; border: 1px solid var(--border); border-radius: 12px; padding: 32px 36px; margin-bottom: 25px; word-break: break-word; }
+    .article-box h2 { font-size: 20px; font-weight: 700; color: #0f172a; margin: 24px 0 10px 0; }
+    .article-box h2:first-child { margin-top: 0; }
+    .article-box h3 { font-size: 16px; font-weight: 600; color: #1e293b; margin: 18px 0 6px 0; }
+    .article-box p { color: #475569; margin-bottom: 12px; line-height: 1.7; font-size: 14px; }
+    .article-box ol, .article-box ul { padding-left: 20px; color: #475569; margin-bottom: 14px; font-size: 14px; }
+    .article-box li { margin-bottom: 6px; }
+
+    /* Footer */
+    footer { background: #ffffff; border-top: 1px solid var(--border); padding: 30px 20px; text-align: center; margin-top: auto; width: 100%; }
+    .footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px 18px; margin-bottom: 14px; }
+    .footer-links a { color: var(--text-muted); text-decoration: none; font-size: 13px; }
+    .footer-links a:hover { color: var(--primary); }
+    .footer-pbn { font-size: 12px; color: #94a3b8; margin-top: 8px; }
+    .footer-pbn a { color: #64748b; text-decoration: underline; margin: 0 4px; }
+    .copyright { font-size: 12px; color: #94a3b8; margin-top: 12px; }
+
+    /* Comprehensive Mobile Responsiveness */
+    @media (max-width: 650px) {
+      .header-inner { flex-direction: column; gap: 12px; padding: 12px 14px; }
+      nav { justify-content: center; gap: 8px 14px; }
+      nav a { font-size: 13px; }
+      main { padding: 18px 12px; }
+      .hero { margin-bottom: 20px; }
+      .hero h1 { font-size: 21px; line-height: 1.3; }
+      .hero p { font-size: 13.5px; }
+      .converter-card { padding: 16px 12px; border-radius: 8px; margin-bottom: 20px; }
+      .form-wrap { border-radius: 6px; }
+      .input-url { height: 44px; font-size: 13.5px; padding: 0 12px; }
+      .btn-start { height: 44px; padding: 0 16px; font-size: 13.5px; }
+      .result-section { padding: 16px 12px; border-radius: 8px; }
+      .result-header { gap: 12px; margin-bottom: 14px; padding-bottom: 12px; }
+      .result-thumb { width: 85px; height: 48px; }
+      .result-meta h3 { font-size: 13.5px; }
+      .tabs-bar { gap: 6px; }
+      .tab-btn { padding: 7px 12px; font-size: 13px; }
+      .formats-table th, .formats-table td { padding: 8px 6px; font-size: 12.5px; }
+      .download-action-btn { padding: 6px 12px; font-size: 12px; }
+      .article-box { padding: 20px 14px; border-radius: 8px; margin-bottom: 20px; }
+      .article-box h2 { font-size: 17px; margin: 18px 0 8px 0; }
+      .article-box p, .article-box li { font-size: 13px; }
+      .grid-features { grid-template-columns: 1fr; gap: 10px; }
+      .grid-item { padding: 14px; }
+      footer { padding: 20px 12px; }
+      .footer-links { gap: 8px 12px; }
+      .footer-links a { font-size: 12px; }
+    }
+
+    /* Adsterra Responsive Ad Placements */
+    .ad-slot { display: flex; justify-content: center; align-items: center; margin: 20px auto; overflow: hidden; text-align: center; max-width: 100%; }
+    .ad-728 { display: flex; min-height: 90px; }
+    .ad-320 { display: none; min-height: 50px; }
+    .ad-300 { display: flex; min-height: 250px; }
+    .ad-300-mobile { display: none; min-height: 250px; }
+    @media (max-width: 767px) {
+      .ad-728 { display: none !important; }
+      .ad-320 { display: flex !important; }
+      .ad-300-mobile { display: flex !important; }
+      .ad-slot { margin: 14px auto; }
+    }
+    .ad-skyscraper-fixed-left,
+    .ad-skyscraper-fixed-right {
+      display: none;
+    }
+    @media (min-width: 1300px) {
+      .ad-skyscraper-fixed-left {
+        display: block;
+        position: fixed;
+        top: 100px;
+        left: calc(50% - 640px);
+        width: 160px;
+        height: 600px;
+        z-index: 40;
+      }
+      .ad-skyscraper-fixed-right {
+        display: block;
+        position: fixed;
+        top: 100px;
+        right: calc(50% - 640px);
+        width: 160px;
+        height: 600px;
+        z-index: 40;
+      }
+    }
+  </style>
+
+  <!-- Adsterra Social Bar -->
+  <script data-cfasync="false" src="https://bauval.org/14/a352359f537046deffd070dc201a7bd7"></script>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <a href="/" class="logo-container">
+        <svg class="logo-img" viewBox="0 0 512 512" fill="none">
+          <defs><linearGradient id="freeGradH" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#ff3b30"/><stop offset="100%" stop-color="#cc181e"/></linearGradient></defs>
+          <rect width="512" height="512" rx="128" fill="url(#freeGradH)"/><path d="M200 150 L360 256 L200 362 Z" fill="#ffffff"/><path d="M156 390 H356" stroke="#ffffff" stroke-width="36" stroke-linecap="round"/>
+        </svg>
+        <div class="logo-text">Free<span>YT</span>Downloader</div>
+      </a>
+      <nav>
+        <a href="/">Home</a>
+        <a href="youtube-to-mp4.html" class="active">YouTube to MP4</a>
+        <a href="youtube-to-mp3.html">YouTube to MP3</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="hero">
+      <h1>YouTube to MP4 Converter - 1080p HD</h1>
+      <p>Convert and download YouTube videos in 1080p Full HD, 720p, and 480p with pristine sound.</p>
+    </div>
+
+    <!-- Adsterra Top Responsive Banner -->
+    <div class="ad-slot ad-728">
+      <script>
+        atOptions = {
+          'key' : 'baf98cbf878859c6c4f933ff67750ba6',
+          'format' : 'iframe',
+          'height' : 90,
+          'width' : 728,
+          'params' : {}
+        };
+      </script>
+      <script src="https://bauval.org/22/baf98cbf878859c6c4f933ff67750ba6"></script>
+    </div>
+    <div class="ad-slot ad-320">
+      <script>
+        atOptions = {
+          'key' : '7a5e70ab3ab63fcf82f4fb4857cc33c2',
+          'format' : 'iframe',
+          'height' : 50,
+          'width' : 320,
+          'params' : {}
+        };
+      </script>
+      <script src="https://bauval.org/22/7a5e70ab3ab63fcf82f4fb4857cc33c2"></script>
+    </div>
+
+    <div class="converter-card">
+      <form onsubmit="event.preventDefault(); startConversion();">
+        <div class="form-wrap">
+          <input type="text" id="keyword" class="input-url" placeholder="Paste YouTube link here..." autocomplete="off" autofocus>
+          <button type="submit" id="submit" class="btn-start">
+            <span>Download MP4</span>
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+        <p class="form-tip">Target Format: <strong>High-Definition MP4 (Up to 1080p Full HD)</strong></p>
+      </form>
+
+      <div id="loading_spinner" class="spinner-wrap" style="display: none;">
+        <div class="spinner-circle"></div>
+        <p id="loading_status_text" style="font-weight: 500; font-size: 13.5px; color: #475569;">Extracting MP4 video stream...</p>
+      </div>
+
+      <div id="resultSection" class="result-section" style="display: none;">
+        <div class="result-header">
+          <img id="videoThumb" src="" alt="Thumbnail" class="result-thumb">
+          <div class="result-meta">
+            <h3 id="videoTitle">Loading title...</h3>
+            <p id="videoDuration">Duration: --:--</p>
+          </div>
+        </div>
+
+        <div class="tabs-bar">
+          <button type="button" class="tab-btn active" id="tabVideoBtn" onclick="switchMediaTab('video')">🎬 Video (MP4)</button>
+          <button type="button" class="tab-btn" id="tabAudioBtn" onclick="switchMediaTab('audio')">🎵 Audio (MP3)</button>
+        </div>
+
+        <div id="videoTabContent">
+          <div class="table-container">
+            <table class="formats-table">
+              <thead>
+                <tr><th>Quality</th><th>Size</th><th style="text-align: right;">Download</th></tr>
+              </thead>
+              <tbody id="videoFormatsTableBody"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div id="audioTabContent" style="display: none;">
+          <div class="table-container">
+            <table class="formats-table">
+              <thead>
+                <tr><th>Quality</th><th>Bitrate</th><th style="text-align: right;">Download</th></tr>
+              </thead>
+              <tbody id="audioFormatsTableBody"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Adsterra 300x250 Mid Banner -->
+    <div class="ad-slot ad-300">
+      <script>
+        atOptions = {
+          'key' : 'bb968c61333d19db7e3eb4114260c507',
+          'format' : 'iframe',
+          'height' : 250,
+          'width' : 300,
+          'params' : {}
+        };
+      </script>
+      <script src="https://bauval.org/22/bb968c61333d19db7e3eb4114260c507"></script>
+    </div>
+
+    <section class="article-box">
+      <h2>Free Online YouTube to MP4 1080p & 4K Video Downloader</h2>
+      <p>
+        FreeYTDownloader is the leading <strong>high definition youtube downloader</strong> engineered for video creators, researchers, and offline viewers. Whether you need a lightning-fast <strong>youtube download 1080p</strong> engine or an advanced <strong>download 4k youtube video</strong> tool capable of handling ultra-high-definition 60fps streams, our platform extracts direct, uncompressed MP4 video files with pristine stereo sound in seconds.
+      </p>
+
+      <h2>How to Download YouTube Videos to MP4 in Seconds</h2>
+      <div class="step-grid">
+        <div class="step-card">
+          <div class="step-num">01</div>
+          <h4>Copy YouTube URL</h4>
+          <p>Copy the link of any YouTube video, clip, documentary, or Short from your browser address bar or mobile app share menu.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">02</div>
+          <h4>Paste & Fetch Streams</h4>
+          <p>Paste the link into the converter box above and click <strong>Download MP4</strong>. Our multi-engine resolver fetches all available video resolutions instantly.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">03</div>
+          <h4>Select 1080p or 4K & Download</h4>
+          <p>Choose your desired quality (1080p Full HD, 4K UHD, 720p HD, or 480p) and save the MP4 video directly to your PC, Mac, or phone.</p>
+        </div>
+      </div>
+
+      <h2>Key Features of Our YouTube MP4 Downloader</h2>
+      <div class="grid-features">
+        <div class="grid-item">
+          <h4>🎬 True 1080p Full HD & 4K Ultra HD</h4>
+          <p>Download <strong>youtube video download 1080p</strong> clips preserving original bitrates, frame rates (60fps/30fps), and dynamic color range.</p>
+        </div>
+        <div class="grid-item">
+          <h4>🔊 Synchronized Audio Included</h4>
+          <p>Every MP4 video is packaged with high-fidelity AAC stereo audio tracks. Never worry about silent high-resolution downloads.</p>
+        </div>
+        <div class="grid-item">
+          <h4>📱 YouTube Shorts to MP4</h4>
+          <p>Instantly save vertical YouTube Shorts in Full HD resolution without watermarks for offline editing or archival.</p>
+        </div>
+        <div class="grid-item">
+          <h4>⚡ Fast YouTube Download Nodes</h4>
+          <p>Distributed cloud resolvers bypass throttling and queue delays, delivering download links in under 1 second.</p>
+        </div>
+      </div>
+
+      <h2>Supported Video Codecs & Formats</h2>
+      <div class="pills-container">
+        <span class="spec-pill highlight">MP4 (H.264 / AVC)</span>
+        <span class="spec-pill highlight">1080p Full HD</span>
+        <span class="spec-pill highlight">4K UHD (2160p)</span>
+        <span class="spec-pill">720p HD</span>
+        <span class="spec-pill">480p / 360p</span>
+        <span class="spec-pill">WebM (VP9)</span>
+        <span class="spec-pill">AV1 Next-Gen</span>
+      </div>
+
+      <!-- Adsterra In-Article Banner -->
+      <div class="ad-slot ad-728">
+        <script>
+          atOptions = {
+            'key' : 'baf98cbf878859c6c4f933ff67750ba6',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+          };
+        </script>
+        <script src="https://bauval.org/22/baf98cbf878859c6c4f933ff67750ba6"></script>
+      </div>
+      <div class="ad-slot ad-300-mobile">
+        <script>
+          atOptions = {
+            'key' : 'bb968c61333d19db7e3eb4114260c507',
+            'format' : 'iframe',
+            'height' : 250,
+            'width' : 300,
+            'params' : {}
+          };
+        </script>
+        <script src="https://bauval.org/22/bb968c61333d19db7e3eb4114260c507"></script>
+      </div>
+
+      <h2>Acceso Global: Descargar Videos de YouTube en MP4</h2>
+      <p>
+        Para los millones de usuarios que buscan <strong>descargar video mp4</strong> y <strong>descargar youtube videos</strong> con la máxima resolución, FreeYTDownloader ofrece una interfaz en la nube rápida y completamente gratuita. Descarga videos en 1080p y 4K sin programas adicionales en cualquier dispositivo.
+      </p>
+
+      <h2>Frequently Asked Questions (FAQ)</h2>
+      <div class="faq-card">
+        <h3>How to download YouTube videos in highest quality (1080p / 4K)?</h3>
+        <p>Paste the YouTube video link above, click Download MP4, and pick 1080p or 4K from the table. Our server provides a direct download link with full audio.</p>
+      </div>
+
+      <div class="faq-card">
+        <h3>Is this YouTube MP4 downloader free with no limits?</h3>
+        <p>Yes. You can download as many MP4 videos as you want without registration, payments, or software installations.</p>
+      </div>
+
+      <div class="faq-card">
+        <h3>Can I download long YouTube videos like podcasts or movies?</h3>
+        <p>Yes. Our infrastructure supports long YouTube video downloads up to several hours long without buffering or server timeouts.</p>
+      </div>
+    </section>
+
+    <!-- Adsterra Bottom Responsive Banner -->
+    <div class="ad-slot ad-728">
+      <script>
+        atOptions = {
+          'key' : 'baf98cbf878859c6c4f933ff67750ba6',
+          'format' : 'iframe',
+          'height' : 90,
+          'width' : 728,
+          'params' : {}
+        };
+      </script>
+      <script src="https://bauval.org/22/baf98cbf878859c6c4f933ff67750ba6"></script>
+    </div>
+    <div class="ad-slot ad-320">
+      <script>
+        atOptions = {
+          'key' : '7a5e70ab3ab63fcf82f4fb4857cc33c2',
+          'format' : 'iframe',
+          'height' : 50,
+          'width' : 320,
+          'params' : {}
+        };
+      </script>
+      <script src="https://bauval.org/22/7a5e70ab3ab63fcf82f4fb4857cc33c2"></script>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <a href="youtube-to-mp4.html">YouTube to MP4</a>
+      <a href="youtube-to-mp3.html">YouTube to MP3</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="dmca.html">DMCA & Copyright</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+    <div class="footer-pbn">
+      Network Partners: 
+      <a href="https://y2matehd.bond" target="_blank" rel="noopener">Y2mateHD</a> • 
+      <a href="https://videotomp3.bond" target="_blank" rel="noopener">VideoToMP3</a>
+    </div>
+    <div class="copyright">
+      &copy; 2026 FreeYTDownloader.cyou — All rights reserved.
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+
   <!-- Adsterra Left Skyscraper (Screens >= 1300px) -->
   <div class="ad-skyscraper-fixed-left">
     <script>
