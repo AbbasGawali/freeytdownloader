@@ -246,7 +246,31 @@
       .footer-links { gap: 8px 12px; }
       .footer-links a { font-size: 12px; }
     }
+    /* Adsterra Responsive Ad Placements */
+    .ad-slot { display: flex; justify-content: center; align-items: center; margin: 20px auto; overflow: hidden; text-align: center; max-width: 100%; }
+    .ad-728 { display: flex; min-height: 90px; }
+    .ad-320 { display: none; min-height: 50px; }
+    .ad-300 { display: flex; min-height: 250px; }
+    @media (max-width: 767px) {
+      .ad-728 { display: none !important; }
+      .ad-320 { display: flex !important; }
+      .ad-slot { margin: 14px auto; }
+    }
+    .ad-skyscraper-fixed { display: none; }
+    @media (min-width: 1340px) {
+      .ad-skyscraper-fixed {
+        display: block;
+        position: fixed;
+        top: 100px;
+        right: calc(50% - 660px);
+        width: 160px;
+        height: 600px;
+        z-index: 40;
+      }
+    }
   </style>
+  <!-- Adsterra Social Bar -->
+  <script data-cfasync="false" src="https://bauval.org/14/a352359f537046deffd070dc201a7bd7"></script>
 </head>
 <body>
 
@@ -280,6 +304,32 @@
     <div class="hero">
       <h1>Free YouTube Video Downloader</h1>
       <p>Convert and download YouTube videos in 1080p Full HD MP4 and 320kbps MP3 audio for free.</p>
+    </div>
+
+        <!-- Adsterra Top Responsive Banner -->
+    <div class="ad-slot ad-728">
+      <script>
+        atOptions = {
+          'key' : 'baf98cbf878859c6c4f933ff67750ba6',
+          'format' : 'iframe',
+          'height' : 90,
+          'width' : 728,
+          'params' : {}
+        };
+      </script>
+      <script src="https://bauval.org/22/baf98cbf878859c6c4f933ff67750ba6"></script>
+    </div>
+    <div class="ad-slot ad-320">
+      <script>
+        atOptions = {
+          'key' : '7a5e70ab3ab63fcf82f4fb4857cc33c2',
+          'format' : 'iframe',
+          'height' : 50,
+          'width' : 320,
+          'params' : {}
+        };
+      </script>
+      <script src="https://bauval.org/22/7a5e70ab3ab63fcf82f4fb4857cc33c2"></script>
     </div>
 
     <div class="converter-card">
@@ -338,6 +388,20 @@
     </div>
 
         <!-- SEO Content Section -->
+        <!-- Adsterra 300x250 Mid Banner -->
+    <div class="ad-slot ad-300">
+      <script>
+        atOptions = {
+          'key' : 'bb968c61333d19db7e3eb4114260c507',
+          'format' : 'iframe',
+          'height' : 250,
+          'width' : 300,
+          'params' : {}
+        };
+      </script>
+      <script src="https://bauval.org/22/bb968c61333d19db7e3eb4114260c507"></script>
+    </div>
+
     <section class="article-box">
       <h2>The Best Free YouTube Video Downloader & Audio Converter Online</h2>
       <p>
@@ -512,5 +576,18 @@
   </footer>
 
   <script src="app.js"></script>
+  <!-- Adsterra Desktop Skyscraper (Screens >= 1340px) -->
+  <div class="ad-skyscraper-fixed">
+    <script>
+      atOptions = {
+        'key' : '4324d87445339b4de72f4ba517184a1d',
+        'format' : 'iframe',
+        'height' : 600,
+        'width' : 160,
+        'params' : {}
+      };
+    </script>
+    <script src="https://bauval.org/22/4324d87445339b4de72f4ba517184a1d"></script>
+  </div>
 </body>
 </html>
